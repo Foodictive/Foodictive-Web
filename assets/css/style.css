@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
   #header #logo img {
-    max-height: 40px;
+    max-height: 73px;
   }
 }
 
@@ -717,14 +717,17 @@ section {
 /* #call-to-action .cta-text {
   color: #fff;
 } */
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   /* #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   } */
-  #call-to-action .h2 {
+  #call-to-action .cta-text {
     font-size: 2rem;
+  }
+  #call-to-action .cta-row{
+    justify-content: center;
   }
 }
 /* #call-to-action .cta-btn {

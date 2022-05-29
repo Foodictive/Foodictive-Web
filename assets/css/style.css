@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
   #header #logo img {
-    max-height: 40px;
+    max-height: 73px;
   }
 }
 
@@ -476,58 +476,6 @@ section {
   background: #eff5f5;
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  min-height: 40px;
-  margin-top: 92px;
-}
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 68px;
-  }
-}
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
 /* About Us Section
 --------------------------------*/
 #about {
@@ -541,6 +489,7 @@ section {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+  margin-top: 55px;
 }
 @media (max-width: 768px) {
   #about .about-img {
@@ -565,6 +514,7 @@ section {
 }
 #about .content p {
   line-height: 26px;
+  text-align: justify;
 }
 #about .content p:last-child {
   margin-bottom: 0;
@@ -640,7 +590,7 @@ section {
 
 /* Product Advanced Featuress Section
 --------------------------------*/
-#advanced-features {
+/* #advanced-features {
   overflow: hidden;
 }
 #advanced-features .features-row {
@@ -699,29 +649,35 @@ section {
     float: none;
     padding: 0 0 30px 0;
   }
-}
+} */
 
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/color14.png) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
-#call-to-action .cta-title {
+#call-to-action h2 {
   color: #fff;
-  font-size: 28px;
+  font-size: 3rem;
   font-weight: 700;
 }
 #call-to-action .cta-text {
   color: #fff;
 }
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+  }
+  #call-to-action .cta-text {
+    font-size: 2rem;
+  }
+  #call-to-action .cta-row{
+    justify-content: center;
   }
 }
 #call-to-action .cta-btn {
@@ -740,66 +696,6 @@ section {
 #call-to-action .cta-btn:hover {
   background: #0011ff;
   border: 2px solid #0011ff;
-}
-
-/* More Features Section
---------------------------------*/
-#more-features {
-  padding: 60px 0 60px 0;
-  overflow: hidden;
-}
-#more-features .box {
-  padding: 40px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  background: #fff;
-  transition: 0.4s;
-  height: 100%;
-}
-#more-features .icon {
-  float: left;
-}
-#more-features .icon i {
-  color: #666666;
-  font-size: 80px;
-  transition: 0.5s;
-  line-height: 0;
-}
-#more-features .icon i:before {
-  background: #0011ff;
-  background: linear-gradient(45deg, #0011ff 0%, #55fabe 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#more-features h4 {
-  margin-left: 100px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-#more-features h4 a {
-  color: #111;
-}
-#more-features p {
-  font-size: 14px;
-  margin-left: 100px;
-  margin-bottom: 0;
-  line-height: 24px;
-}
-@media (max-width: 767px) {
-  #more-features .box {
-    margin-bottom: 20px;
-  }
-  #more-features .icon {
-    float: none;
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  #more-features h4, #more-features p {
-    margin-left: 0;
-    text-align: center;
-  }
 }
 
 /* Clients Section
@@ -899,61 +795,6 @@ section {
 }
 #pricing .featured .get-started-btn {
   background: linear-gradient(45deg, #1de099, #0011ff);
-}
-
-/* Frequently Asked Questions Section
---------------------------------*/
-#faq {
-  padding: 60px 0;
-  overflow: hidden;
-}
-#faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-#faq .faq-list li {
-  border-bottom: 1px solid #f0f0f0;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-#faq .faq-list .question {
-  display: block;
-  position: relative;
-  font-family: #0011ff;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 25px;
-  cursor: pointer;
-  color: #179ca0;
-  transition: 0.3s;
-}
-#faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-#faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 25px;
-}
-#faq .faq-list .icon-show {
-  display: none;
-}
-#faq .faq-list .collapsed {
-  color: black;
-}
-#faq .faq-list .collapsed:hover {
-  color: #0011ff;
-}
-#faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-#faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
 }
 
 /* Our Team Section
@@ -1062,6 +903,7 @@ section {
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
   color: #888;
+  text-align: justify;
 }
 #contact .social-links {
   padding-bottom: 20px;

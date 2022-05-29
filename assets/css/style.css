@@ -489,6 +489,7 @@ section {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+  margin-top: 55px;
 }
 @media (max-width: 768px) {
   #about .about-img {
@@ -513,6 +514,7 @@ section {
 }
 #about .content p {
   line-height: 26px;
+  text-align: justify;
 }
 #about .content p:last-child {
   margin-bottom: 0;
@@ -901,6 +903,7 @@ section {
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
   color: #888;
+  text-align: justify;
 }
 #contact .social-links {
   padding-bottom: 20px;

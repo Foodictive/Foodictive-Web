@@ -386,7 +386,7 @@
           <h3 class="section-title">How to Use Foodictive</h3>
           <span class="section-divider"></span>
           <center>
-            <p class="section-description">For more detailed information about how to use Foodictive. Please <b>double click</b> on these buttons.</p>
+            <p class="section-description">For more detailed information about how to use Foodictive. Please click these buttons.</p>
           </center>
         </div>
         <div class="row">
@@ -397,55 +397,70 @@
             <span class="filter-item" data-filter="phone" onclick="show4()">Step 4</span>
             <span class="filter-item" data-filter="shoe" onclick="show5()">Step 5</span>
             <br>
-            <span class="filter-item active" data-filter="all" onclick="showall()" style="margin-top: 20px;">Show All Steps</span>
+            <span class="filter-item active" data-filter="gif" onclick="showall()" style="margin-top: 20px;">Show All Steps</span>
           </div>
         </div>
-        <div class="row">
-
-        </div>
+        
+        <!-- GIF -->
+        <center>
+          <p id="allstep" class="section-description">All of the steps will be showed in this GIF.</p>
+        </center>
         <div class="row" style="display:flex; flex-wrap:wrap; align-items: center; justify-content: center;">
+          <div class="gallery-item gif">
+            <div class="gallery-item-inner">
+              <div style='position:relative; padding-bottom:calc(178.04% + 44px)'>
+                <iframe src='https://gfycat.com/ifr/IllinformedShowyCranefly' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- First Image -->
           <center>
             <p id="step1" class="section-description">First, open Foodictive and allow the permissions.</p>
           </center>
           <div class="gallery-item watch">
             <div class="gallery-item-inner">
-              <img src="https://1.bp.blogspot.com/-rAOuebpUc6E/YS_C1gP9q2I/AAAAAAAACa4/emX-5ZEz-MUeUr11_iaj_BkEYbs-FH8kQCNcBGAsYHQ/s0/watch-1.jpg" alt="watch">
+              <img id="img1" src="assets/img/gallery/foto-1 - Copy.jpg" alt="watch">
             </div>
           </div>
 
+          <!-- Second Image -->
           <center>
             <p id="step2" class="section-description">Second, swipe to the right side of your phone to open camera and take or upload your photo.</p>
           </center>
           <div class="gallery-item headphone">
             <div class="gallery-item-inner">
-              <img src="https://1.bp.blogspot.com/-T3KmNJ1-wYw/YS_E3rHDRII/AAAAAAAACb4/_DVj1_wL7eUZzJ45z9RQS5JG1orI_VlvACNcBGAsYHQ/s0/headphone-1.jpg" alt="headphone">
+              <img id="img2" src="assets/img/gallery/foto-1.jpg" alt="headphone">
             </div>
           </div>
 
+          <!-- Third Image -->
           <center>
             <p id="step3" class="section-description">Third, press "Identify" button to identify you food</p>
           </center>
           <div class="gallery-item camera">
             <div class="gallery-item-inner">
-              <img src="https://1.bp.blogspot.com/-I4zq8AEp_jY/YS_C3MiTUqI/AAAAAAAACa8/GjRpPmI0eqE_g52nIv7gUrh_9AGQbQkoACNcBGAsYHQ/s0/camera-1.jpg" alt="camera">
+              <img id="img3" src="assets/img/gallery/foto-1.png" alt="camera">
             </div>
           </div>
           
+          <!-- Fourth Image -->
           <center>
             <p id="step4" class="section-description">Fourth, all information about your food will be showed on our app.</p>
           </center>
           <div class="gallery-item phone">
             <div class="gallery-item-inner">
-              <img src="https://1.bp.blogspot.com/-wX4lusii0OE/YS_DC2BpADI/AAAAAAAACbA/tTGcB7QUQnshvW8hbEtf1-Nnj6dl3wSzgCNcBGAsYHQ/s0/phone-1.jpg" alt="phone">
+              <img id="img4" src="assets/img/gallery/foto-2.jpg" alt="phone">
             </div>
           </div>
 
+          <!-- Fifth Image -->
           <center>
             <p id="step5" class="section-description">Last, to show location of every food merchants around you, press "Show Location" button</p>   
           </center>
           <div class="gallery-item shoe">
             <div class="gallery-item-inner">
-              <img src="https://1.bp.blogspot.com/-QvLveiaH3VI/YS_C1lXw6-I/AAAAAAAACa0/1hIbUlfQUQ8ew--PZ8IYB_55WFYTX8OtQCNcBGAsYHQ/s0/shoe-1.jpg" alt="shoe">
+              <img id="img5" src="assets/img/gallery/foto-3.jpg" alt="shoe">
             </div>
           </div>
         </div>

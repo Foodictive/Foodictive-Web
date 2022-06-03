@@ -837,6 +837,7 @@ h1, h2, h3, h4, h5, h6 {
 #gallery .gallery-item-inner img{
 	width: 100%;
   border: 3px solid #d4dad9;
+  display: none;
 }
 #gallery .gallery-item.show{
 	animation: fadeIn 0.5s ease;
